@@ -14,3 +14,12 @@ face_generation/data/
 
 */.floyd*
 
+embeddings/checkpoints/
+image-classification/checkpoint
+image-classification/cifar-10-batches-py/
+image-classification/cifar-10-python.tar.gz
+image-classification/image_classification.data-00000-of-00001
+image-classification/image_classification.index
+image-classification/image_classification.meta
+transfer-learning/codes
+transfer-learning/labels
