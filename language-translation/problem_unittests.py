@@ -22,6 +22,8 @@ def test_text_to_ids(text_to_ids):
 
     test_source_id_seq, test_target_id_seq = text_to_ids(test_source_text, test_target_text, source_vocab_to_int, target_vocab_to_int)
     
+    test_target_id_seq = [np.append(sentence[-2::-1], sentence[-1]) for sentence in test_target_id_seq]
+        
     assert len(test_source_id_seq) == len(test_source_text.split('\n')),\
         'source_id_text has wrong length, it should be {}.'.format(len(test_source_text.split('\n')), len(test_source_id_seq))
     assert len(test_target_id_seq) == len(test_target_text.split('\n')), \
